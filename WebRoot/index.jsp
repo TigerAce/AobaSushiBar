@@ -63,10 +63,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href='index.jsp'>Menu</a></li>
-                <li><a href='orderOnline.jsp'>Order Online</a></li>
-                <li><a href='special.jsp'>Special</a>
-                <li><a href='contact.jsp'>Contact</a></li>
+                <li class="active"><a href='Menu'>Menu</a></li>
+                <li><a href='OrderOnline'>Order Online</a></li>
+                <li><a href='Special'>Special</a>
+                <li><a href='Contact'>Contact</a></li>
              
               </ul>
             </div>

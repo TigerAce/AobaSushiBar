@@ -33,7 +33,46 @@
     </init-param>
     <load-on-startup>2</load-on-startup>
  </servlet>
+ 
+ <servlet>
+ 	<servlet-name>Menu</servlet-name>
+    <jsp-file>/index.jsp</jsp-file>
+ </servlet>
+ 
+ <servlet-mapping>
+    <servlet-name>Menu</servlet-name>
+    <url-pattern>/Menu</url-pattern>
+</servlet-mapping>
 
+<servlet>
+ 	<servlet-name>OrderOnline</servlet-name>
+    <jsp-file>/orderOnline.jsp</jsp-file>
+ </servlet>
+ 
+ <servlet-mapping>
+    <servlet-name>OrderOnline</servlet-name>
+    <url-pattern>/OrderOnline</url-pattern>
+</servlet-mapping>
+
+<servlet>
+ 	<servlet-name>Special</servlet-name>
+    <jsp-file>/special.jsp</jsp-file>
+ </servlet>
+ 
+ <servlet-mapping>
+    <servlet-name>Special</servlet-name>
+    <url-pattern>/Special</url-pattern>
+</servlet-mapping>
+
+<servlet>
+ 	<servlet-name>Contact</servlet-name>
+    <jsp-file>/contact.jsp</jsp-file>
+ </servlet>
+ 
+ <servlet-mapping>
+    <servlet-name>Contact</servlet-name>
+    <url-pattern>/Contact</url-pattern>
+</servlet-mapping>
 
   <!-- Standard Action Servlet Mapping -->
   <servlet-mapping>
