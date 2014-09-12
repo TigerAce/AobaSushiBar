@@ -63,11 +63,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href='index.jsp'>Menu</a></li>
+                <li><a href='index.jsp'>Menu</a></li>
                 <li><a href='orderOnline.jsp'>Order Online</a></li>
-                <li><a href='special.jsp'>Special</a>
+                <li class="active"><a href='special.jsp'>Special</a>
                 <li><a href='contact.jsp'>Contact</a></li>
-             
+            
               </ul>
             </div>
           </div>
@@ -79,55 +79,48 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
    
 
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
+<div class="container marketing">
+      <!-- START THE FEATURETTES -->
 
-    <div class="container marketing">
+      <hr class="featurette-divider">
 
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/sushi1.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Super Prawn</h2>
-          <p>shrimp Tempura, cucumber, crabmeat, lettuce, green onions spicy sauce topped with Ebi, avocado, house special sauce, kiwi sauce and black Tobiko<br>1340KJ<br>$12.5</p>
-        <!--   <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>--> 
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/sushi2.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Webster Roll</h2>
-          <p>shrimp tempura, cucumber, crab meat topped with White Tuna, avocado, Tobiko and house special sauce<br>1240KJ<br>$12</p>
-        
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/sushi3.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Smoky Sal</h2>
-          <p>cream cheese, cucumber, avocado topped with smoked Salmon, lemon slices, capers Unagi sauce, kiwi sauce and black Tobiko<br>1310KJ<br>$12</p>
-        
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/sushi4.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Marine Boy</h2>
-          <p>Salmon skin, Unagi, green onions, crabmeat and cucumber rolled in soybean wrapper, topped with Tuna, White Tuna, Salmon, Hamachi, Unagi sauce, kiwi sauce, Tobiko and green onions<br>1250KJ<br>$12.5</p>
-        
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/sushi5.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Hella Hot</h2>
-          <p>fresh Salmon, White Tuna wasabi mayo, spicy sauce, cucumber, avocado and chopped jalapeño peppers rolled in soybean wrapper, topped with spicy Tuna, Unagi sauce, mango sauce, Tobiko and green onions <br>1010KJ<br>$11
-</p>
-         
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/sushi6.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Golden Gate</h2>
-          <p>avocado, crabmeat, cucumber, asparagus, mango, Tobiko, deep fried squid with mango sauce <br>900KJ<br>$10 </p>
-         
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/sushi4.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
 
+      <hr class="featurette-divider">
 
-   
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/sushi5.jpg" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/sushi6.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
 
 
       <!-- FOOTER -->
