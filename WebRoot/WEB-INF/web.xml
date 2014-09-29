@@ -34,6 +34,14 @@
     <load-on-startup>2</load-on-startup>
  </servlet>
  
+ 
+  <!-- Standard Action Servlet Mapping -->
+  <servlet-mapping>
+    <servlet-name>action</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+
+
  <servlet>
  	<servlet-name>Menu</servlet-name>
     <jsp-file>/index.jsp</jsp-file>
@@ -73,14 +81,7 @@
     <servlet-name>Contact</servlet-name>
     <url-pattern>/Contact</url-pattern>
 </servlet-mapping>
-
-  <!-- Standard Action Servlet Mapping -->
-  <servlet-mapping>
-    <servlet-name>action</servlet-name>
-    <url-pattern>*.do</url-pattern>
-  </servlet-mapping>
-
-
+  
   <!-- The Usual Welcome File List -->
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>

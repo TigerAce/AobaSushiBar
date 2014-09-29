@@ -23,5 +23,25 @@
 
 
 <struts-config>
+    
+    <!-- config action forms -->
+    <form-beans>
+        <!-- login action form -->
+        <form-bean name="loginForm" type="com.aobasushibar.admin.LoginActionForm"></form-bean>
+    </form-beans>
+    
+    <!-- config actions -->
+    <action-mappings>
+        <!-- config login action -->
+        <action path="/login" 
+            	type="com.aobasushibar.admin.LoginAction"
+            	name="loginForm"           
+            	scope="request"
+            	>
+            	<!-- config login redirect page -->
+            	<forward name="success" path="/dashboard.jsp"></forward>
+            	<forward name="error" path="/login.jsp"></forward>
+         </action>
+    </action-mappings>
 </struts-config>
 
