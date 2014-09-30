@@ -1,8 +1,5 @@
 package com.aobasushibar.admin;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
