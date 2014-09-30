@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <db-info>
+        <driver-name>org.postgresql.Driver</driver-name>
+        <url>jdbc:postgresql://aobadb.ci841sb1zcxx.ap-southeast-2.rds.amazonaws.com:5432/aobadb</url>
+        <username>aobadbadmin</username>
+        <password>aobadbadmin</password>
+    </db-info>
+</config>
