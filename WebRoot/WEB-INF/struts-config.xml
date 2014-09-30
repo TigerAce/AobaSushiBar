@@ -42,6 +42,15 @@
             	<forward name="success" path="/dashboard.jsp"></forward>
             	<forward name="error" path="/login.jsp"></forward>
          </action>
+         
+         <!-- config show menu action -->
+        <action path="/menu" 
+            	type="com.aobasushibar.action.ShowMenuAction"       
+            	scope="request"
+            	>
+            	<!-- config login redirect page -->
+            	<forward name="list" path="/index.jsp"></forward>
+         </action>
     </action-mappings>
 </struts-config>
 

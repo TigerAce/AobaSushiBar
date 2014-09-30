@@ -1,7 +1,10 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page import="com.aobasushibar.utils.PageModel" %>
+<%@ page import="com.aobasushibar.basedata.domain.*" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+PageModel pageModel = (PageModel)request.getAttribute("pageModel");
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -59,11 +62,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.jsp">Aoba Sushi Bar</a>
+              <a class="navbar-brand" href="Menu">Aoba Sushi Bar</a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href='Menu'>Menu</a></li>
+                <li class="active"><a href='menu.do'>Menu</a></li>
                 <li><a href='OrderOnline'>Order Online</a></li>
                 <li><a href='Special'>Special</a>
                 <li><a href='Contact'>Contact</a></li>
@@ -85,45 +88,29 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
     <div class="container marketing">
 
+
       <!-- Three columns of text below the carousel -->
       <div class="row">
+
+      <%
+	
+    		if(pageModel != null){
+    		List<Menu> menu = pageModel.getList();
+    		
+    for(Menu m : menu){
+    	
+%>
         <div class="col-lg-4">
           <img class="img-circle" src="img/sushi1.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Super Prawn</h2>
-          <p>shrimp Tempura, cucumber, crabmeat, lettuce, green onions spicy sauce topped with Ebi, avocado, house special sauce, kiwi sauce and black Tobiko<br>1340KJ<br>$12.5</p>
+          <h2><%=m.getName() %></h2>
+          <p><%=m.getDescription() %><br><%=m.getPrice() %></p>
         <!--   <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>--> 
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/sushi2.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Webster Roll</h2>
-          <p>shrimp tempura, cucumber, crab meat topped with White Tuna, avocado, Tobiko and house special sauce<br>1240KJ<br>$12</p>
         
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/sushi3.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Smoky Sal</h2>
-          <p>cream cheese, cucumber, avocado topped with smoked Salmon, lemon slices, capers Unagi sauce, kiwi sauce and black Tobiko<br>1310KJ<br>$12</p>
-        
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/sushi4.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Marine Boy</h2>
-          <p>Salmon skin, Unagi, green onions, crabmeat and cucumber rolled in soybean wrapper, topped with Tuna, White Tuna, Salmon, Hamachi, Unagi sauce, kiwi sauce, Tobiko and green onions<br>1250KJ<br>$12.5</p>
-        
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/sushi5.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Hella Hot</h2>
-          <p>fresh Salmon, White Tuna wasabi mayo, spicy sauce, cucumber, avocado and chopped jalapeño peppers rolled in soybean wrapper, topped with spicy Tuna, Unagi sauce, mango sauce, Tobiko and green onions <br>1010KJ<br>$11
-</p>
-         
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/sushi6.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Golden Gate</h2>
-          <p>avocado, crabmeat, cucumber, asparagus, mango, Tobiko, deep fried squid with mango sauce <br>900KJ<br>$10 </p>
-         
-        </div><!-- /.col-lg-4 -->
+        <%
+    }
+    		}
+        %>
       </div><!-- /.row -->
 
 
