@@ -86,13 +86,12 @@ PageModel pageModel = (PageModel)request.getAttribute("pageModel");
 
 
 
-
 	<!-- Marketing messaging and featurettes
     ================================================== -->
 	<!-- Wrap the rest of the page in another container to center all the content. -->
 
 	<div class="container marketing">
-	
+
 		<div class="row">
 			<div class="col-lg-2">
 				<div class="menu-selector">
@@ -103,14 +102,14 @@ PageModel pageModel = (PageModel)request.getAttribute("pageModel");
 					</ul>
 				</div>
 			</div>
-			<div class="col-xs-10">
+			<div class="col-lg-10">
 				<%
 					if (pageModel != null) {
 						List<Menu> menu = pageModel.getList();
 
 						for (Menu m : menu) {
 				%>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-4 col-sm-5">
 					<img class="img-circle" src="img/sushi1.jpg"
 						alt="Generic placeholder image"
 						style="width: 140px; height: 140px;">
