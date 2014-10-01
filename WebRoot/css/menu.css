@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+
+.menu-selector {
+	
+	width:100%;
+	max-width: 250px;
+	 width:expression_r(document.body.clientWidth > 500? "500px": "auto" ); 
+}

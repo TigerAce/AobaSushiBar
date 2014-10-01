@@ -49,7 +49,7 @@
             	scope="request"
             	>
             	<!-- config login redirect page -->
-            	<forward name="list" path="/index.jsp"></forward>
+            	<forward name="list" path="/menu.jsp"></forward>
          </action>
     </action-mappings>
 </struts-config>

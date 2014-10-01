@@ -48,6 +48,11 @@
 		<servlet-name>Contact</servlet-name>
 		<jsp-file>/contact.jsp</jsp-file>
 	</servlet>
+	
+	<servlet>
+		<servlet-name>Home</servlet-name>
+		<jsp-file>/index.jsp</jsp-file>
+	</servlet>
 
 	<!-- Standard Action Servlet Mapping -->
 	<servlet-mapping>
@@ -74,6 +79,11 @@
 	<servlet-mapping>
 		<servlet-name>Contact</servlet-name>
 		<url-pattern>/Contact</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>Home</servlet-name>
+		<url-pattern>/Home</url-pattern>
 	</servlet-mapping>
 
 	<!-- The Usual Welcome File List -->
